@@ -1,5 +1,6 @@
 package br.com.ton.estudos.presentation.statistics
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
@@ -62,7 +63,7 @@ fun StatisticsScreen(
                     title = "Streak Atual",
                     value = "${uiState.streak} Dias",
                     subtitle = "foco contínuo",
-                    icon = Icons.Filled.LocalFire,
+                    icon = Icons.Filled.Whatshot,
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
                     contentColor = MaterialTheme.colorScheme.onPrimaryContainer
                 )
