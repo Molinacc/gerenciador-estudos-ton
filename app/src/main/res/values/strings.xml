@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gerenciador de Estudos do Ton</string>
+    <string name="channel_timer_name">Cronômetro de Estudos</string>
+    <string name="channel_timer_desc">Notificações do cronômetro em andamento</string>
+    <string name="channel_reminder_name">Lembretes de Estudo</string>
+    <string name="channel_reminder_desc">Lembretes para iniciar seus estudos</string>
+    <string name="channel_flashcard_name">Revisão de Flashcards</string>
+    <string name="channel_flashcard_desc">Lembretes para revisar seus flashcards</string>
+</resources>
