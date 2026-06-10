@@ -129,7 +129,7 @@ fun DashboardScreen(
                         title = "Sequência",
                         value = "${uiState.streak} dias",
                         subtitle = "consecutivos",
-                        icon = Icons.Filled.LocalFire,
+                        icon = Icons.Filled.Whatshot,
                         containerColor = MaterialTheme.colorScheme.errorContainer,
                         contentColor = MaterialTheme.colorScheme.onErrorContainer
                     )
