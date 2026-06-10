@@ -77,7 +77,7 @@ class TimerForegroundService : Service() {
         return NotificationCompat.Builder(this, StudosApplication.CHANNEL_TIMER_ID)
             .setContentTitle("Estudo em andamento")
             .setContentText(formatTime(_elapsedSeconds.value))
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_launcher)
             .setContentIntent(pendingIntent)
             .setOnlyAlertOnce(true)
             .setOngoing(true)
