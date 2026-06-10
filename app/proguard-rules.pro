@@ -1,0 +1,4 @@
+-keep class br.com.ton.estudos.data.local.database.entity.** { *; }
+-keep class br.com.ton.estudos.domain.model.** { *; }
+-keepattributes *Annotation*
+-dontwarn okhttp3.**
