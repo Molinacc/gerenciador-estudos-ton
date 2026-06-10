@@ -14,7 +14,7 @@ class StudyReminderReceiver : BroadcastReceiver() {
         val notification = NotificationCompat.Builder(context, StudosApplication.CHANNEL_REMINDER_ID)
             .setContentTitle("📚 Hora de estudar!")
             .setContentText("Você tem uma sessão de estudos programada.")
-            .setSmallIcon(R.mipmap.ic_launcher)
+            .setSmallIcon(R.drawable.ic_launcher)
             .setAutoCancel(true)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .build()
