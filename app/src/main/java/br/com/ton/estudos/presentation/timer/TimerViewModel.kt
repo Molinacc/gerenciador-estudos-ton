@@ -79,8 +79,7 @@ class TimerViewModel @Inject constructor(
             service.elapsedSeconds
                 .onEach { seconds ->
                     _uiState.update { state ->
-                        // If Pomodoro, check if target time is reached
-                        if (state.sessionType == SessionType.POMODORO) {
+                        val finalSeconds = if (state.sessionType == SessionType.POMODORO) {
                             val limitSeconds = if (state.pomodoroState == PomodoroState.FOCUS) {
                                 state.focusDurationMinutes * 60L
                             } else {
@@ -95,6 +94,7 @@ class TimerViewModel @Inject constructor(
                         } else {
                             seconds
                         }
+                        state.copy(elapsedSeconds = finalSeconds)
                     }
                 }
                 .launchIn(viewModelScope)
