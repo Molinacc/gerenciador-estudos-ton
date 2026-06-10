@@ -42,7 +42,14 @@ class ScheduleViewModel @Inject constructor(
         _viewMode,
         _selectedSubjectId,
         _selectedPriority
-    ) { subjects, sessions, date, mode, subId, priority ->
+    ) { flowsArray ->
+        val subjects = flowsArray[0] as List<Subject>
+        val sessions = flowsArray[1] as List<StudySession>
+        val date = flowsArray[2] as Long
+        val mode = flowsArray[3] as ViewMode
+        val subId = flowsArray[4] as Long?
+        val priority = flowsArray[5] as Int?
+        
         val filtered = filterSessions(sessions, date, mode, subId, priority, subjects)
         ScheduleUiState(
             subjects = subjects,
